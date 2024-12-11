@@ -11,3 +11,4 @@
 ## 📝 筆記
 
 - [型別提示 (Type Hints)](./notes/type-hints.md)
+- [Poetry](./notes/poetry.md)

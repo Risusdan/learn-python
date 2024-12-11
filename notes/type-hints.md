@@ -1,10 +1,15 @@
 # 型別提示 (Type Hints)
 
-## 參考資料
-
-- [typing --- 支援型別提示](https://docs.python.org/zh-tw/3/library/typing.html)
-- [使用 Python typing 模組對你的同事好一點](https://myapollo.com.tw/blog/python-typing-module/)
-- [Type hints cheat sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+- [型別提示 (Type Hints)](#型別提示-type-hints)
+  - [前言](#前言)
+  - [為什麼要使用型別提示？](#為什麼要使用型別提示)
+  - [型別提示的基本用法](#型別提示的基本用法)
+  - [`typing` 模組](#typing-模組)
+  - [型別檢查器](#型別檢查器)
+    - [安裝 mypy](#安裝-mypy)
+    - [使用 mypy](#使用-mypy)
+    - [範例](#範例)
+  - [參考資料](#參考資料)
 
 ## 前言
 
@@ -74,4 +79,43 @@ def add(numbers: list[int]) -> int:
 
 ## 型別檢查器
 
+- 型別檢查器(type checker)是一種工具，用於在執行程式之前，檢查程式碼中的型別，一旦發現型別錯誤就會拋出錯誤
+- 常見的型別檢查器有 mypy 和 pyre，以下以 mypy 為例
 
+### 安裝 mypy
+
+```bash
+pip install mypy
+```
+
+### 使用 mypy
+
+```bash
+mypy my_script.py
+```
+
+### 範例
+
+```python
+# myscript.py
+
+from typing import List
+
+def greet(name: str) -> str:
+    return f"Hello, {name}!"
+
+greet(42)
+```
+
+當執行 `mypy myscript.py` 時，會得到類似這樣的錯誤：
+```
+error: Argument 1 to "greet" has incompatible type "int"; expected "str"
+```
+
+詳細用法請見 [mypy 官方文件](https://mypy.readthedocs.io/en/stable/)。
+
+## 參考資料
+
+- [typing --- 支援型別提示](https://docs.python.org/zh-tw/3/library/typing.html)
+- [使用 Python typing 模組對你的同事好一點](https://myapollo.com.tw/blog/python-typing-module/)
+- [Type hints cheat sheet](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)

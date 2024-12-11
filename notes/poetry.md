@@ -1,7 +1,6 @@
 # Poetry
 
 - [Poetry](#poetry)
-  - [參考資料](#參考資料)
   - [前言](#前言)
   - [安裝](#安裝)
   - [解除安裝](#解除安裝)
@@ -13,10 +12,7 @@
     - [5. 管理環境](#5-管理環境)
     - [6. 移除依賴](#6-移除依賴)
     - [7. 更新依賴](#7-更新依賴)
-
-## 參考資料
-
-- [Poetry 官方文件](https://python-poetry.org/docs/)
+  - [參考資料](#參考資料)
 
 ## 前言
 
@@ -126,3 +122,7 @@ poetry remove requests
 poetry update
 poetry update requests
 ```
+
+## 參考資料
+
+- [Poetry 官方文件](https://python-poetry.org/docs/)
