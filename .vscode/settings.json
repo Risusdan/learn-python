@@ -1,0 +1,29 @@
+{
+    "peacock.favoriteColors": [
+        { "name": "My Color - Blue", "value": "#375669" },
+        { "name": "My Color - Green", "value": "#456525" },
+        { "name": "My Color - Red", "value": "#82231c" },
+        { "name": "My Color - Yellow", "value": "#9e7e38" },
+        { "name": "My Color - Purple", "value": "#511536" }
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#bf9a4a",
+        "activityBar.background": "#bf9a4a",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#2a765e",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#bf9a4a",
+        "statusBar.background": "#9e7e38",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#bf9a4a",
+        "statusBarItem.remoteBackground": "#9e7e38",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#9e7e38",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#9e7e3899",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#9e7e38",
+}
